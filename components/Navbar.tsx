@@ -1,52 +1,44 @@
 "use client";
 
-import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <div className="sticky top-6 z-50 flex justify-center px-4">
-      
-      <header
-        className="
-        w-full max-w-5xl
-        bg-meliora-white/80
-        backdrop-blur-md
-        border border-meliora-border
-        rounded-full
-        shadow-sm
-      "
-      >
-        
-        <div className="flex items-center justify-between px-6 py-3">
+    <header className="sticky top-0 z-50 w-full bg-meliora-black border-b border-white/10">
 
-          {/* Logo */}
-          <Link
-            href="/"
-            className="text-sm font-semibold text-meliora-black"
-          >
-            Meliora Projects
-          </Link>
+      <div className="px-6 lg:px-12 h-[76px] flex items-center justify-between">
 
-          {/* CTA */}
-          <a
-            href="#consultation"
-            className="
-            px-6 py-2.5
-            text-sm font-semibold
-            text-meliora-white
-            bg-meliora-beige
-            rounded-full
-            hover:opacity-90
-            transition
-          "
-          >
-            Request Consultation
-          </a>
 
-        </div>
+        {/* Logo */}
+        <Image
+          src="/images/navbar.webp"
+          alt="Meliora Projects"
+          width={180}
+          height={40}
+          priority
+          className="h-10 w-auto"
+        />
 
-      </header>
 
-    </div>
+        {/* CTA */}
+        <a
+          href="#contact"
+          className="
+          px-5 py-2.5
+          text-sm font-semibold
+          text-white
+          bg-meliora-beige
+          rounded-md
+          hover:bg-[#b3a07c]
+          transition-colors
+        "
+        >
+          Request Consultation
+        </a>
+
+
+      </div>
+
+    </header>
   );
 }
