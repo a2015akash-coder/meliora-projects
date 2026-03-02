@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-meliora-black: #000000;
+  --color-meliora-white: #FFFFFF;
+  --color-meliora-beige: #9C8B6A;
+  --color-meliora-light-beige: #F5F2EB;
+  --color-meliora-text-grey: #222222;
+  --color-meliora-border: #E5E5E5;
+}
+
+:root {
+  --background: var(--color-meliora-white);
+  --foreground: var(--color-meliora-black);
+}
+
+body {
+  background: var(--color-meliora-light-beige);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
