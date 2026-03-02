@@ -1,5 +1,5 @@
-import { CheckCircle2 } from 'lucide-react';
-import LeadForm from './LeadForm';
+import { CheckCircle2 } from "lucide-react";
+import LeadForm from "./LeadForm";
 
 export default function Hero() {
   return (
@@ -14,68 +14,94 @@ export default function Hero() {
 
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-meliora-border text-meliora-beige text-xs font-medium mb-4">
+
               <span className="h-1.5 w-1.5 bg-meliora-beige rounded-full"></span>
-              Accepting New Projects in NSW
+
+              Town Planning Consultants – NSW
+
             </div>
 
 
             {/* Heading */}
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-meliora-black leading-tight mb-4 tracking-tight">
 
-              Town Planning &
+              Town Planning Consultants in NSW
 
               <span className="block text-meliora-beige">
-                Social Impact Assessment
+                for Development Approval
               </span>
-
-              Consultants in NSW
 
             </h1>
 
 
             {/* Description */}
             <p className="text-base text-meliora-text-grey mb-6 leading-relaxed">
-              Get your development approved faster with expert planning reports and impact assessments. We handle complex council regulations so you don’t have to.
+
+              We help developers, builders, and property owners navigate NSW planning regulations with professional town planning reports, development applications, and council approval support.
+
             </p>
 
 
-            {/* Trust indicators */}
+            {/* Trust Indicators */}
             <div className="flex flex-wrap gap-5 mb-7 text-sm">
 
               <div className="flex items-center gap-2 text-meliora-text-grey font-medium">
+
                 <CheckCircle2 className="w-4 h-4 text-meliora-beige" />
+
                 NSW Planning Specialists
+
               </div>
 
+
               <div className="flex items-center gap-2 text-meliora-text-grey font-medium">
+
                 <CheckCircle2 className="w-4 h-4 text-meliora-beige" />
+
+                Development Application Experts
+
+              </div>
+
+
+              <div className="flex items-center gap-2 text-meliora-text-grey font-medium">
+
+                <CheckCircle2 className="w-4 h-4 text-meliora-beige" />
+
                 Fast Turnaround Times
+
               </div>
 
             </div>
 
 
-            {/* CTA */}
+            {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3">
 
+              {/* Primary CTA */}
               <a
                 href="#contact"
                 className="inline-flex justify-center items-center px-6 py-3 bg-meliora-beige hover:bg-[#8a7b5c] text-white font-semibold rounded-lg transition shadow-sm text-base"
               >
-                Request Free Consultation
+
+                Request Town Planning Consultation
+
               </a>
 
 
+              {/* Phone CTA */}
               <a
-                href="tel:+61200000000"
+                href="tel:+61255501234"
                 className="inline-flex justify-center items-center px-6 py-3 bg-white border border-meliora-border hover:border-meliora-beige text-meliora-black font-semibold rounded-lg transition text-base"
               >
+
                 (02) 5550 1234
+
               </a>
 
             </div>
 
           </div>
+
 
 
           {/* Right Form */}
@@ -83,12 +109,15 @@ export default function Hero() {
 
             <LeadForm />
 
-            {/* Decorative blur */}
+
+
+            {/* Decorative Background Blur */}
             <div className="absolute -top-10 -right-10 w-48 h-48 bg-meliora-beige/10 rounded-full blur-3xl -z-10"></div>
 
             <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-meliora-beige/10 rounded-full blur-3xl -z-10"></div>
 
           </div>
+
 
 
         </div>
